@@ -1,4 +1,3 @@
-//navato
 #include<iostream>
 #include<iomanip>
 using namespace std;
@@ -46,6 +45,7 @@ int main()
 			cin>> itm[j].quantity;
 		}
 	}
+		cout<< "Summary Reprot"<< endl;
 		cout<< setw(10)<< "#"
 		<< setw(20)<< "Customer Name"
 		<< setw(20)<< "Order Date"
@@ -61,16 +61,17 @@ int main()
 	{
 		cout<< endl;
 		cout<< setw(10)<< i+1
-			<< setw(20)<< itm[i].firstName,itm[i].lastName;
-		cout<< setw(20)<< itm[i].day<< "/" << itm[i].month/itm[i].year);
-	}
-	for(int j=0; j<3; j++)
+			<< setw(10)<< itm[i].firstName<<", "<< itm[i].lastName
+			<< setw(20)<< itm[i].day<< "/" << itm[i].month<< "/"<< itm[i].year<< endl;
+	
+		for(int j=0; j<3; j++)
 	{
-		cout<< setw(10)<< itm[j].name
-			<< setw(10)<< itm[j].price
-			<< setw(10)<< itm[j].quantity;	
+		cout<< setw(50)<< itm[j].name<< setw(10)<< itm[j].price<< setw(10)<< itm[j].quantity<< endl;
+	}
+			
 	}	
 		
 	return 0;
+	
 	
 }
