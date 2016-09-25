@@ -100,7 +100,33 @@ void prob5()
   }
   cout<< str1<< endl;
 }
-
+void prob6()
+{
+	int length;
+	char str1[100];
+	cout<< "Enter a character: ";
+	gets(str1);
+	length=strlen(str1);
+	for (int i=length; i>0; i--)
+	{
+		if(str1[i]==32)
+		{
+			int j=i+1;
+			while(str1[j]!=32&&j<length)
+			{
+				cout<< str1[j];
+				j++;
+			}
+			cout<< endl;
+		}
+	}
+	int x=0;
+	while(str1[x]!=32)
+	{
+		cout<< str1[x];
+		x++;
+	}
+}
 int main()
 {
 	cout<< "STRING COMPARE"<< endl;
@@ -113,4 +139,7 @@ int main()
 	prob4();
 	cout<< "CAPITALIZE EACH WORD"<< endl;
 	prob5();
+	cout<< "====================\n";
+	cout<< "STRING REVERSE VERTICAL"<< endl;
+	prob6();
 }
