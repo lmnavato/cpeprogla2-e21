@@ -17,17 +17,17 @@ int result;
   if(result==1)
   {
   	cout<< "Positive"<< endl;
-  	cout<< "====================";
+  	cout<< "====================\n";
   }
   else if(result==0)
   {
   	cout<< "Equal"<< endl;
-  	cout<< "====================";
+  	cout<< "====================\n";
   }
   else
   {
   	cout<< "Negative"<< endl;
-  	cout<< "====================";
+  	cout<< "====================\n";
   }
 }
 void prob2()
@@ -40,7 +40,7 @@ void prob2()
   gets(str2);
   strcpy(str1,str2);
   cout<< "new string valuefor str1: "<< strcpy(str1,str2)<< endl;
-  cout<< "====================";
+  cout<< "====================\n";
 }
 void prob3()
 {
@@ -52,7 +52,7 @@ void prob3()
   gets(str2);
   strcat(str1,str2);
   cout<< "new string valuefor str1: "<< str1<< endl;
-  cout<< "====================";
+  cout<< "====================\n";
 }
 void prob4()
 {
@@ -72,12 +72,12 @@ void prob4()
 	if(count)
 		{
 			cout<< str1<< " is not a palindrome."<< endl;
-			cout<< "====================";                                    
+			cout<< "====================\n";                                    
 		}
 		else
 		{
 			cout<< str1<< " is a palindrome."<< endl;
-			cout<< "====================";
+			cout<< "====================\n";
 		}
 }
 void prob5()
@@ -103,9 +103,14 @@ void prob5()
 
 int main()
 {
+	cout<< "STRING COMPARE"<< endl;
 	prob1();
+	cout<< "STRING COPY"<< endl;
 	prob2();
+	cout<< "STRING CONCATENATION"<< endl;
 	prob3();
+	cout<< "PALINDROME"<< endl;
 	prob4();
+	cout<< "CAPITALIZE EACH WORD"<< endl;
 	prob5();
 }
